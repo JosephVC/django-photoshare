@@ -25,11 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
-DEBUG = os.getenv('DEBUG')
+DEBUG = os.getenv("DEBUG")
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
@@ -142,9 +142,9 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
-AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-# AWS_ACCESS_KEY_ID = 'AKIAWOLDEEOZCSS5RI4D'
-AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-# AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+# AWS_ACCESS_KEY_ID = 'AKIAWOLDEEOZOBUWUVIH'
+# AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME")
 AWS_QUERYSTRING_AUTH = False
