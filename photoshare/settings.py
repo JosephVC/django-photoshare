@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'photos.apps.PhotosConfig',
 
     # Storages for communicating with AWS
-    'storages'
+    'storages',
+
+    'admin_honeypot',
 ]
 
 MIDDLEWARE = [
@@ -144,7 +146,5 @@ STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 
 AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
-# AWS_ACCESS_KEY_ID = 'AKIAWOLDEEOZOBUWUVIH'
-# AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = os.getenv("AWS_STORAGE_BUCKET_NAME")
 AWS_QUERYSTRING_AUTH = False
