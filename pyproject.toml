@@ -10,6 +10,7 @@ Pillow = "^8.1.1"
 boto3 = "^1.17.22"
 django-storages = "^1.11.1"
 python-dotenv = "^0.15.0"
+django-admin-honeypot = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 
